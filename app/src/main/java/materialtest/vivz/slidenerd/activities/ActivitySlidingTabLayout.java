@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -21,7 +22,7 @@ import materialtest.vivz.slidenerd.materialtest.R;
 import materialtest.vivz.slidenerd.views.SlidingTabLayout;
 
 
-public class ActivitySlidingTabLayout extends ActionBarActivity {
+public class ActivitySlidingTabLayout extends AppCompatActivity {
 
     private Toolbar mToolbar;
     private ViewPager mPager;
@@ -38,7 +39,10 @@ public class ActivitySlidingTabLayout extends ActionBarActivity {
     private void setupToolbar() {
         mToolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(mToolbar);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        if (getSupportActionBar() != null)
+        {
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
     }
 
     private void setupTabs() {

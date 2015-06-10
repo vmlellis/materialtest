@@ -3,13 +3,14 @@ package materialtest.vivz.slidenerd.activities;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.transition.TransitionInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import materialtest.vivz.slidenerd.materialtest.R;
 
-public class ActivitySharedB extends ActionBarActivity {
+public class ActivitySharedB extends AppCompatActivity {
 
 
     @Override

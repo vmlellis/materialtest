@@ -6,6 +6,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.transition.Slide;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
@@ -17,7 +18,7 @@ import android.widget.Button;
 
 import materialtest.vivz.slidenerd.materialtest.R;
 
-public class ActivityA extends ActionBarActivity implements View.OnClickListener {
+public class ActivityA extends AppCompatActivity implements View.OnClickListener {
 
     private ViewGroup mRoot;
     private Button mButton1;

@@ -5,6 +5,7 @@ import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,7 +17,7 @@ import materialtest.vivz.slidenerd.extras.Util;
 import materialtest.vivz.slidenerd.materialtest.R;
 
 
-public class ActivityVectorDrawable extends ActionBarActivity {
+public class ActivityVectorDrawable extends AppCompatActivity {
 
     private Toolbar mToolbar;
     private ImageView mImageVector;

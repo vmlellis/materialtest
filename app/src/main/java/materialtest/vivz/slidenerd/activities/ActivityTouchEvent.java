@@ -4,6 +4,7 @@ package materialtest.vivz.slidenerd.activities;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -13,7 +14,7 @@ import android.view.MotionEvent;
 import materialtest.vivz.slidenerd.materialtest.R;
 
 
-public class ActivityTouchEvent extends ActionBarActivity {
+public class ActivityTouchEvent extends AppCompatActivity {
 
     public static final String TAG = "VIVZ";
 
@@ -27,8 +28,12 @@ public class ActivityTouchEvent extends ActionBarActivity {
     private void setupToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        if (getSupportActionBar() != null)
+        {
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
     }
 
     @Override

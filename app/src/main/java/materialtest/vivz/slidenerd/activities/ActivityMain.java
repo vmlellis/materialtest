@@ -11,7 +11,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -39,7 +39,7 @@ import me.tatarka.support.job.JobInfo;
 import me.tatarka.support.job.JobScheduler;
 
 
-public class ActivityMain extends ActionBarActivity implements MaterialTabListener, View.OnClickListener {
+public class ActivityMain extends AppCompatActivity implements MaterialTabListener, View.OnClickListener {
 
     //int representing our 0th tab corresponding to the Fragment where search results are dispalyed
     public static final int TAB_SEARCH_RESULTS = 0;
@@ -88,7 +88,8 @@ public class ActivityMain extends ActionBarActivity implements MaterialTabListen
         mContainerToolbar = (ViewGroup) findViewById(R.id.container_app_bar);
         //set the Toolbar as ActionBar
         setSupportActionBar(mToolbar);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
         //setup the NavigationDrawer
         mDrawerFragment = (FragmentDrawer)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);

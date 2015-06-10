@@ -6,6 +6,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.transition.TransitionInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,7 +15,7 @@ import android.widget.Button;
 
 import materialtest.vivz.slidenerd.materialtest.R;
 
-public class ActivitySharedA extends ActionBarActivity implements View.OnClickListener {
+public class ActivitySharedA extends AppCompatActivity implements View.OnClickListener {
 
 
     private Button mButton1;

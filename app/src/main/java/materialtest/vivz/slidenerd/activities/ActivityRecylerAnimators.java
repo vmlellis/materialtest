@@ -2,6 +2,7 @@ package materialtest.vivz.slidenerd.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -15,7 +16,7 @@ import materialtest.vivz.slidenerd.adapters.AdapterRecyclerAnimators;
 import materialtest.vivz.slidenerd.materialtest.R;
 import materialtest.vivz.slidenerd.views.Util;
 
-public class ActivityRecylerAnimators extends ActionBarActivity {
+public class ActivityRecylerAnimators extends AppCompatActivity {
 
     //int containing the duration of the animation run when items are added or removed from the RecyclerView
     public static final int ANIMATION_DURATION = 2000;

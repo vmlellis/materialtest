@@ -7,9 +7,9 @@ import android.os.Build;
  */
 public class Util {
     public static boolean isLollipopOrGreater() {
-        return Build.VERSION.SDK_INT >= 21 ? true : false;
+        return Build.VERSION.SDK_INT >= 21;
     }
     public static boolean isJellyBeanOrGreater(){
-        return Build.VERSION.SDK_INT>=16?true:false;
+        return Build.VERSION.SDK_INT>=16;
     }
 }
